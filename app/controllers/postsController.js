@@ -1,4 +1,4 @@
-const postsData = require("../data/postsData.json");
+const postsData = require("../data/postsData");
 
 function index(req, res) {
   const responseData = {
@@ -48,12 +48,9 @@ function modify(req, res) {
 
 function destroy(req, res) {
   const index = postsData.findIndex((p) => p.id === parseInt(req.params.id));
-  const deleted = postsData.splice(index, 1);
-  const responseData = {
-    result: deleted[0],
-    success: true,
-  };
-  res.json(responseData);
+  postsData.splice(index, 1);
+  console.log(postsData);
+  res.status(204).send();
 }
 
 module.exports = { index, show, store, update, modify, destroy };
