@@ -4,7 +4,7 @@ const port = 3000;
 const urlPort = "http://localhost:" + port;
 
 // imports
-const postsRouter = require("./routers/posts");
+const postsRouter = require("./app/routers/posts");
 
 // middlewares
 app.use(express.static("./public"));
