@@ -1,0 +1,20 @@
+{
+  "name": "express-blog",
+  "version": "1.0.0",
+  "description": "Creiamo il nostro blog personale e giorno dopo giorno lo potremo arricchire con nuove funzionalità sulla base di quello che impareremo.",
+  "repository": {
+    "type": "git",
+    "url": "express-blog"
+  },
+  "license": "ISC",
+  "author": "Michele-Brignola",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
