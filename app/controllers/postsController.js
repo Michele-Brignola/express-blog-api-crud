@@ -58,7 +58,7 @@ function store(req, res) {
     message: "Post creato",
     success: true,
   };
-  res.json(responseData);
+  res.status(201).json(responseData);
 }
 
 function update(req, res) {
